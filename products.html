@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Camisas de Futebol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de Navegação -->
+  <nav>
+    <div class="logo">
+      <h1>Loja Camisas</h1>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Produtos</a>
+      <a href="cart.html">Carrinho (<span id="cart-count">0</span>)</a>
+    </div>
+  </nav>
+ <!-- Produtos -->
+ <section id="products">
+    <h2>Escolha sua Camisa</h2>
+    <div class="products-container">
+      <div class="product">
+        <img src="barca.jpg.jpg" alt="Camisa do Barcelona">
+        <h3>Camisa do Barcelona</h3>
+        <p>R$ 199,99</p>
+        <button class="add-to-cart" data-product="Camisa do Barcelona" data-price="199.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="alemanha.jpg.jpg" alt="Camisa da Alemanha">
+        <h3>Camisa da Alemanha</h3>
+        <p>R$ 179,99</p>
+        <button class="add-to-cart" data-product="Camisa da Alemanha" data-price="179.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="coxa.jpg.jpg" alt="Camisa do Coritiba">
+        <h3>Camisa do Coritiba</h3>
+        <p>R$ 189,99</p>
+        <button class="add-to-cart" data-product="Camisa do Coritiba" data-price="189.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="celtic.jpg.jpg" alt="Camisa do Celtic">
+        <h3>Camisa do Celtic</h3>
+        <p>R$ 209,99</p>
+        <button class="add-to-cart" data-product="Camisa do Celtic" data-price="209.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="stourbridge.jpg.jpg" alt="Camisa do Stourbridge">
+        <h3>Camisa do Stourbridge</h3>
+        <p>R$ 219,99</p>
+        <button class="add-to-cart" data-product="Camisa do Stourbridge" data-price="219.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="turquia.jpg.jpg" alt="Camisa da Turquia">
+        <h3>Camisa da Turquia</h3>
+        <p>R$ 179,99</p>
+        <button class="add-to-cart" data-product="Camisa da Turquia" data-price="179.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="wolves.jpg.jpg" alt="Camisa do Wolverhampton">
+        <h3>Camisa do Wolverhampton</h3>
+        <p>R$ 199,99</p>
+        <button class="add-to-cart" data-product="Camisa do Wolverhampton" data-price="199.99">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <img src="sfc.jpg.jpg" alt="Camisa Time H">
+        <h3>Camisa do Santos FC</h3>
+        <p>R$ 209,99</p>
+        <button class="add-to-cart" data-product="Camisa do Santos FC" data-price="209.99">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrinho -->
+  <section id="cart">
+    <h2>Carrinho</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: R$ <span id="total-price">0.00</span></p>
+    <button id="checkout-btn">Finalizar Compra</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Loja Camisas de Futebol</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
